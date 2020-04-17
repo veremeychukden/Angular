@@ -1,0 +1,9 @@
+<div class="bord">
+<a [routerLink]="[index]" class="list-group" (click)="onSelected()">
+    <h4 class="list-group-heading">{{myEvent.name}}</h4>
+<!-- <p class="list-group-item-text">{{myEvent.description}}</p> -->
+    <img class="img-fluid" [src]="myEvent.image" alt="">
+</a>
+<button class="btn btn-danger" (click)="onDelete()">DELETE</button>
+<button class="btn btn-info" [routerLink]="['/edit-event', index]">Edit</button>
+</div>

@@ -1,0 +1,26 @@
+
+<div class="row">
+    <div class="col">
+        <h2 class="red">Add: </h2>
+        <div class="form-group">
+            <label for="name" class="yellow">Event name:</label>
+            <input [(ngModel)]="myName" type="text" class="form-control">
+        </div> 
+
+
+        <div class="form-group">
+            <label for="decription" class="yellow">Event description:</label>
+            <input [(ngModel)]="myDescription" type="text" class="form-control">
+        </div>
+
+
+        <div class="form-group">
+            <label for="image" class="yellow">Event image:</label>
+            <input [(ngModel)]="myImage" type="url" class="form-control">
+        </div>
+
+
+        <button class="btn btn-info" (click)="addEvent()" [routerLink]="['/events']">Add new event</button>
+
+    </div>
+</div>

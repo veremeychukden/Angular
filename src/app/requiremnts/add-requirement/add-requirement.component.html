@@ -1,0 +1,35 @@
+<!-- <div class="row">
+    <div class="col">
+        <h2>Add: </h2>
+        <div class="form-group">
+            <label for="name">Require title:</label>
+            <input  type="text" class="form-control">
+        </div> 
+
+
+        <div class="form-group">
+            <label for="decription">Require description:</label>
+            <input  type="text" class="form-control">
+        </div>
+
+        <button class="btn btn-info" >Add new require</button>
+
+    </div>
+</div> -->
+<div class="row">
+    <div class="col">
+        <h2 class="title red">Add Requirement</h2>
+
+        <div class="form-group">
+            <label for="name" class="data-of-requirement blue">Requirement name: </label>
+            <input [(ngModel)]="ReqName" type="text" class="form-control" placeholder="Enter name of requirement:">
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="data-of-requirement blue">Requirement description: </label>
+            <input [(ngModel)]="ReqDescription" type="text" class="form-control" placeholder="Enter description of requirement:">
+        </div>
+
+        <button class="btn btn-info text-effect" (click)="addRequirement()" title="Add new requirement" [routerLink]="['/requirements']">Add new Requirement</button>
+    </div>
+</div>

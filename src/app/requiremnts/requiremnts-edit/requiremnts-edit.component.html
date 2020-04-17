@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="form-group">
+      <label>Title</label>
+      <input [(ngModel)]="myRequirement.title" type="text" class="form-control" placeholder="Enter titile" >
+  
+    </div>
+    <div class="form-group">
+      <label >Description</label>
+      <input [(ngModel)]="myRequirement.description"  type="text" class="form-control"  placeholder="Description" >
+    </div>
+
+    <a type="submit" class="btn btn-primary" (click)="editRequirement()" [routerLink]="['/requirements']">Save changes</a>
+  </div>

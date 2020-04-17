@@ -1,0 +1,26 @@
+img{
+    height: 290px;
+    width: 360px;
+    margin-left: 25px;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 160px;
+}
+
+a{
+   
+    text-align: center;
+}
+
+.bord{
+    -moz-box-shadow: 0px 0px 14px #2dfc8a;
+    -webkit-box-shadow: 0px 0px 14px #2dfc8a;
+    box-shadow: 0px 0px 14px #2dfc8a;
+    margin: 15px;
+    background-color: rgb(57, 236, 227);
+    text-align: center;
+}
+
